@@ -6,7 +6,7 @@ public class CameraMan : MonoBehaviour {
 
 	public GameObject[] cameras = new GameObject[2];
 	public bool MapCameraIsActive;
-	public bool CanClick = false;
+	public bool CanClick = true;
 	// Use this for initialization
 	void Start () {
 
@@ -40,7 +40,7 @@ public class CameraMan : MonoBehaviour {
 	
 	}
 		if (CanClick == false){
-		cameras[1].SetActive(false);
+	cameras[1].SetActive(false);
 		cameras[0].SetActive(true);
 
 

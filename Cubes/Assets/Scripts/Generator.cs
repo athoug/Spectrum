@@ -6,13 +6,19 @@ public class Generator : MonoBehaviour {
 
 	public GameObject cube;
 	public GameObject capsule;
+	public GameObject plane;
 	public int numberOfCubes;
 	public int numberOfCapsules;
 	public int min, max;
-	public float delay = 0.1f;
+	public float delay = 0.5f;
+
+
+
+	public int planeMaxPoint;
 
 	// Use this for initialization
 	void Start () {
+		planeMaxPoint =	(int) plane.transform.lossyScale.x;
 		Invoke ("PlaceCube", delay);
 	}
 
@@ -34,9 +40,9 @@ public class Generator : MonoBehaviour {
 	Vector3 GeneratePosition ()
 	{
 		int x, y, z;
-		x = UnityEngine.Random.Range (min,max);
-		y = UnityEngine.Random.Range (0,max);
-		z = UnityEngine.Random.Range (min,max);
+		x = UnityEngine.Random.Range (-95,65);
+		y = UnityEngine.Random.Range (0,60);
+		z = UnityEngine.Random.Range (-283,164);
 		return new Vector3(x,y,z);
 	}
 
@@ -50,4 +56,7 @@ public class Generator : MonoBehaviour {
 		z = UnityEngine.Random.Range (min,max);
 		return new Vector3(x,y,z);
 	}
+
+
+
 }

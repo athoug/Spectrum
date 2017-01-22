@@ -46,6 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ActivateSpheres.cs" />
+     <Compile Include="Assets\AdjustWaveUI.cs" />
+     <Compile Include="Assets\Death.cs" />
+     <Compile Include="Assets\MapGenrator.cs" />
+     <Compile Include="Assets\MateralChange.cs" />
+     <Compile Include="Assets\PlayAgain.cs" />
+     <Compile Include="Assets\RotateAround.cs" />
      <Compile Include="Assets\Scripts\CameraMan.cs" />
      <Compile Include="Assets\Scripts\CameraTurn.cs" />
      <Compile Include="Assets\Scripts\CapsuleControl.cs" />
@@ -57,6 +64,9 @@
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\PLayerFPS.cs" />
      <Compile Include="Assets\Scripts\Wavelengths.cs" />
+     <Compile Include="Assets\SphereMaterialCHnage.cs" />
+     <Compile Include="Assets\rehaf\Spectrum.cs" />
+     <Compile Include="Assets\rotateAdown.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
